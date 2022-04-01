@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttons__wrapper {
+    width: 500px;
+    margin: 16px auto;
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+}
+ 
+
+.btn {
+    background-color: gainsboro;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+.btn-small {
+    padding: 4px 8px;
+    margin: 4px;
+}
+
+ 
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid black; 
+    color: black;
+}  
+
+.btn-primary {
+    background: #1652F0;
+    color: white;
+}
+
+.btn-success {
+    background: #14cf3c ;
+    color: white
+}
+
+.btn-danger {
+    background:#cf14142b;
+    color: white
+}
+
+.btn-warning {
+    background:#dbac2b;
+    color:white
+}
+
+.btn-primary-outline{
+    border: solid gainsboro;
+    color: gainsboro
+}
+
+.btn-success-outline {
+    border: solid #14cf3c;
+    color: #14cf3c 
+}
+
+.btn-danger-outline {
+    border: solid #cf14142b;
+    color: #cf14142b
+}

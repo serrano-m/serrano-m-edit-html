@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+html{
+    font-family: 'IBM Plex Sans';
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+.card {
+    border: 0;
+    width: 380px;
+    height: 550px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.header{
+    position: relative;
+    left: 0%;
+}
+
+.header span{
+    position: absolute;
+    right: 0;
+    color:white;
+    font-weight: 600;
+}
+
+.card-gradient {
+    background: linear-gradient(45deg, #cc2c1a, #E6AB3F);
+    height: 75%;
+    border-radius: 12px 12px 0 0;
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-content{
+    padding: 4px;
+}
+/*pointer-events: none;*/
+.img-tennis{
+    position: relative;
+    left:18%;
+    width: 95%;
+    bottom: 65%;
+
+}
+
+h1{
+    font-weight: 500;
+    font-size: 15rem;
+    color: white;
+    opacity: 10%;
+    position: absolute;
+    top: 10%;
+    left:0;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+
+.btn{
+    background-color:transparent;
+    padding: 12px 45px;
+    border-radius: 45px;
+    border: 1px solid blue;
+    color: blue;
+    font-size: 1rem;
+    font-family: 'IBM Plex Sans';
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+
+}
+.btn:hover{
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+
+.footer span{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    color: gainsboro;
+    letter-spacing: 0,9rem;
+    transform: translate(-50%);
+
+}
+
+.footer{
+    position: relative;
+    height: 25%;
+
+}

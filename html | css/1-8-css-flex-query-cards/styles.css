@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {  
+    font-family: 'Open Sans', sans-serif;  
+    background-color: #E4EDFA;
+    display: flex;
+    justify-content: center;
+}
+
+.card__container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.card{
+    min-width: 300px;
+    max-width: 320px;
+    background: white;
+    border-radius: 16px;
+ }
+
+.card-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    background: #BCD1FF;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-content{
+    padding: 0 12px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.card-content-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content-title{
+        padding: 12px;
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: #6E798C;
+}
+
+.card-content-subtitle{
+    padding:12px;
+    font-size: 0.6rem;
+    color: rgb(109, 109, 109);
+}
+
+.card-footer{
+    display: flex;
+    padding: 8px 12px;
+    justify-content: space-between;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    padding: 4px 0px;
+    gap: 10px;
+}
+
+.author__name{
+    display: flex;
+    font-size: 0.7rem;
+    font-weight:bold;
+    color: #007AE9;
+}
+.read-more{
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #007AE9;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.card-content h5{
+    padding: 0 12px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.card-content p{
+    padding: 2px 12px;
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+
+.card-footer img{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+
+
+
+/*https://www.figma.com/file/Roit0sI2XSNyTkw8cy720F/edit-flex-card?node-id=0%3A1*/  
+
+/* media query a utilizar em mobile */
+/* para screen, entre 0 e o maximo width de 768px*/
+ 
+@media all and (max-width: 920px) {
+    .card__container {
+        flex-direction: column;
+    }
+   }

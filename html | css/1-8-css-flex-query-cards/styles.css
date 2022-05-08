@@ -11,18 +11,17 @@ html, body {
     justify-content: center;
 }
 
-.card__container {
+section{
     display: flex;
     justify-content: center;
-    gap: 12px;
 }
 
 .card{
     min-width: 300px;
-    max-width: 320px;
     background: white;
     border-radius: 16px;
- }
+    margin:40%;
+}
 
 .card-top{
     display: flex;
@@ -119,13 +118,13 @@ html, body {
 
 
 
-/*https://www.figma.com/file/Roit0sI2XSNyTkw8cy720F/edit-flex-card?node-id=0%3A1*/  
+/*https://www.figma.com/file/Roit0sI2XSNyTkw8cy720F/edit-flex-card?node-id=0%3A1*/
 
 /* media query a utilizar em mobile */
 /* para screen, entre 0 e o maximo width de 768px*/
  
-@media all and (max-width: 920px) {
-    .card__container {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    .section {
+        flex-wrap: wrap;
     }
    }

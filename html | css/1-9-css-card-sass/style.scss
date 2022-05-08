@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Fira+Sans:wght@600&display=swap');
+// font-family: 'EB Garamond', serif;
+// font-family: 'Fira Sans', sans-serif;
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin background-states($val) {
+    @if $val == enabled {
+        background: blue;
+    }
+
+    @else if $val == disabled {
+        background: gainsboro;
+    }
+
+    @else {
+        background: none;
+        border: 1px solid blue;
+    }
+}
+
+body{
+    @extend .flex;
+    background-color: gainsboro;
+}
+
+.card{
+    width: 600px;
+    height: 250px;
+    background: white;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+    .card__thumbnail{
+        width: 80%;
+        height: 100%;
+        background-image: url(https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 6px 0 0 6px;
+        position: relative;
+    }
+    
+    .divider{
+        height: 100%;
+        border-style: dashed;
+        position: absolute;
+        color: gainsboro;
+        left: 8%;
+        
+        &::before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background: gainsboro;
+            position: absolute;
+            top: -5%;    
+            left: -10px;
+        }
+            &::after{
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background: gainsboro;
+            position: absolute;
+            bottom: -5%;
+            left: -10px;
+        }
+}
+
+
+    h1{
+        margin: 0;
+        padding: 24px;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 2.5rem;
+        color: rgb(240, 240, 240);
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        z-index: 1;
+    }
+
+
+    .card__content{
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 80%;
+
+    p{
+        margin: 0;
+        padding: 16px;
+        font-size: 1.2rem;
+        font-family: 'EB Garamond', serif;
+        color: rgb(202, 202, 202);
+        writing-mode: vertical-lr;
+        z-index: 1;
+        }
+
+    .content__menu{
+        @include background-states(enabled);
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        transform: scale();
+        transition: 0.4s ease-in;
+        &:hover{
+            cursor: pointer;
+            transform: scale(10);
+            opacity: 90%;
+            }
+        }
+    }
+
+
+}

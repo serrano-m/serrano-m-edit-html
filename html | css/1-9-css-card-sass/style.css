@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Fira+Sans:wght@600&display=swap");
+.flex, body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+.card {
+  width: 600px;
+  height: 250px;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .card__thumbnail {
+  width: 80%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+}
+
+.card .divider {
+  height: 100%;
+  border-style: dashed;
+  position: absolute;
+  color: gainsboro;
+  left: 8%;
+}
+
+.card .divider::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: gainsboro;
+  position: absolute;
+  top: -5%;
+  left: -10px;
+}
+
+.card .divider::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: gainsboro;
+  position: absolute;
+  bottom: -5%;
+  left: -10px;
+}
+
+.card h1 {
+  margin: 0;
+  padding: 24px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 1;
+}
+
+.card .card__content {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 80%;
+}
+
+.card .card__content p {
+  margin: 0;
+  padding: 16px;
+  font-size: 1.2rem;
+  font-family: 'EB Garamond', serif;
+  color: #cacaca;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  z-index: 1;
+}
+
+.card .card__content .content__menu {
+  background: blue;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  -webkit-transform: scale();
+          transform: scale();
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+
+.card .card__content .content__menu:hover {
+  cursor: pointer;
+  -webkit-transform: scale(10);
+          transform: scale(10);
+  opacity: 90%;
+}
+/*# sourceMappingURL=style.css.map */

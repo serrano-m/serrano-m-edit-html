@@ -1,0 +1,49 @@
+footer{
+    display: flex;
+    border-top: 1px solid gainsboro;
+    justify-content: space-between;
+    padding: 27px 46px;
+    align-items: flex-start;
+
+    .subscribe{
+    display: flex;
+    font-size: 1.4rem;
+
+    }
+
+    .subscribe__input{
+        padding: 20px 0;
+    }
+
+    #email{
+    width: 241px;
+    height: 33px;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+    }
+
+    .footer__titles{
+        padding: 0 0 20px 0;
+    }
+
+    .content_footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .products{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    }
+
+    .resources{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    }
+}

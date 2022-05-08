@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'buttons.scss';
+@import 'header.scss';
+@import 'main.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Inter', sans-serif;
+    /* cada 1rem equivale a 10px */
+    font-size: 62.5%;
+}
+
+footer{
+    display: flex;
+    border-top: 1px solid gainsboro;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 46px;
+    align-items: flex-start;
+
+    .subscribe{
+    display: flex;
+    font-size: 1.4rem;
+
+    }
+
+    .subscribe__input{
+        padding: 20px 0;
+    }
+
+    #email{
+    width: 241px;
+    height: 33px;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+    }
+
+    .footer__titles{
+        padding: 0 0 20px 0;
+    }
+
+    .content_footer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .products{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    }
+
+    .resources{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    }
+}
+
+@media (max-width: 565px) {
+    html,body{
+        font-size: 50%;
+    }
+
+    nav {
+
+    .header__left {
+    
+        .left__menu {
+            display: none;
+            font-size: 1.4rem;
+            gap: 24px;
+            }
+        }
+    }
+
+    .container {
+    
+    .principle__content {
+    
+            .principle__content--subscription {
+                max-width: 40ch;
+            }
+
+            .video__content{
+                width: 90%;
+            }
+
+            .btn__primary_rounded--video{
+                bottom: 140px; 
+                }
+    }
+
+    .works__content{
+
+        p{
+        max-width: 40ch;
+        }
+
+        img{
+        max-width: 90%;
+        }
+    }
+
+    .solutions__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        h2{
+            font-weight: 400;
+            font-size: 5.0rem;
+            }
+        
+        p{
+            max-width: 40ch;
+            padding: 15px 0 15px 0;
+            }
+
+            .cards{
+                display: block;
+                z-index: 1;
+            }
+    
+            .cards__{
+                display: flex;
+                gap: 16px;
+                padding: 8px;
+            }
+    }
+    
+    .get__started{
+            width: 100%;
+            height: 250px;
+            
+    
+            .get__started__text{
+            width: 100%;
+            padding: 10%;
+            font-size: 3.0rem;
+            flex-direction: column;
+            }
+    }
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    .subscribe{
+    flex-direction: column;
+
+    }
+
+    .subscribe__input{
+        padding: 20px 0;
+    }
+
+    #email{
+    width: 241px;
+    height: 33px;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+    }
+
+    .footer__titles{
+        font-weight: 600;
+    }
+
+    .products{
+    align-items: center;
+    margin-bottom: 10px;
+    }
+
+    .resources{
+    align-items: center;
+    margin-bottom: 10px;
+    }
+}
+}

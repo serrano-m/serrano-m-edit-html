@@ -1,0 +1,43 @@
+.btn{
+    background: none;
+    border: 0;
+    padding: 8px 16px;
+
+    &.btn__secondary{
+    background: black;
+    color: white;
+    }
+
+    &.btn__primary{
+    background: #0064DA;
+    color: white;
+    }
+
+    &.btn__primary_rounded{
+    background: #0064DA;
+    color: white;
+    border-radius: 32px;
+    }
+
+    &.btn__primary_rounded--video{
+    background: #0064DA;
+    color: white;
+    border-radius: 32px;
+    position: absolute;
+    bottom: 100px; 
+    }
+
+    &.btn__secondary_rounded{
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: 0.5px solid #ECEBEB;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+        border-radius: 19px;
+    }
+
+    &.btn__third{
+        background: #ECEBEB;
+        color: #0064DA;
+        border: 0;
+    }
+}
